@@ -1,0 +1,21 @@
+/************************************************************************************************************/
+
+Developer: Stephen Bates
+http://www.github.com/swbates
+
+Order of SASS Compilation:
+variables.scss -> typography.scss -> _mixins.scss -> scaffolding.scss -> form.scss -> manifest.scss -> CSS
+
+
+Frameworks/Resources Used:
+HTML5 Boilerplate: 
+	- Modernizr.js - detects available features the browser supports
+	- Normalize.css - Styles elements in a consistent way across browsers
+jQuery v3.6
+BootStrap v4.5 - For the Form submission Modal
+
+Google Fonts:
+Playball (headings)
+Open Sans (body copy)
+
+/************************************************************************************************************/

@@ -1,0 +1,265 @@
+.clearfix::before, .clearfix::after {
+  content: " ";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+
+html {
+  color: #222;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  padding: 20px 0;
+}
+@media all and (max-width: 1024px) {
+  main {
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+}
+@media all and (max-width: 600px) {
+  main {
+    margin-top: 10px;
+  }
+}
+
+h1.modal-title {
+  color: #13446a;
+  font-family: "Playball", cursive;
+}
+
+.modal-header {
+  align-items: center !important;
+}
+
+#form--profile {
+  padding: 15px;
+  max-width: 470px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #faf9f7;
+  border: 2px solid #ddd;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+@media all and (max-width: 600px) {
+  #form--profile {
+    margin: 0 20px;
+    padding: 0;
+    width: 100%;
+    border: none;
+    background-color: #fff;
+  }
+}
+#form--profile h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #13446a;
+  font-family: "Playball", cursive;
+}
+@media all and (max-width: 600px) {
+  #form--profile h1 {
+    margin-bottom: 10px;
+  }
+}
+#form--profile h4 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #13446a;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+@media all and (max-width: 600px) {
+  #form--profile h4 {
+    margin-top: 0;
+  }
+}
+#form--profile fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+#form--profile fieldset:first-child input {
+  display: inline;
+  width: 45%;
+}
+@media all and (max-width: 600px) {
+  #form--profile fieldset label {
+    font-size: 14px;
+  }
+}
+#form--profile select {
+  padding: 10px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 100%;
+  max-width: 330px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+@media all and (max-width: 600px) {
+  #form--profile select {
+    width: 100%;
+    min-width: 320px;
+    max-width: unset;
+    height: 40px;
+  }
+}
+#form--profile .form--block.name {
+  display: flex;
+  flex-direction: row;
+}
+#form--profile .form--block.name input[type=text] {
+  display: inline;
+  width: 49%;
+}
+#form--profile .form--block.name input[type=text]:first-child {
+  margin-right: 10px;
+}
+@media all and (max-width: 600px) {
+  #form--profile .form--block.name {
+    flex-direction: column;
+  }
+}
+#form--profile .form--block.location {
+  display: flex;
+  flex-direction: row;
+}
+@media all and (max-width: 600px) {
+  #form--profile .form--block.location {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 600px) {
+  #form--profile .form--block.photoupload {
+    margin-bottom: 5px;
+  }
+}
+#form--profile .form--block.photoupload p {
+  font-size: 12px;
+  margin: 0 0 10px 0;
+}
+@media all and (max-width: 600px) {
+  #form--profile .form--block.photoupload p {
+    display: none;
+  }
+}
+#form--profile .form--block.communications {
+  margin: 10px 0;
+}
+@media all and (max-width: 600px) {
+  #form--profile .form--block.communications label {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 90%;
+  }
+}
+@media all and (max-width: 600px) {
+  #form--profile .form--block.form--block.gender {
+    margin-bottom: 5px;
+  }
+}
+#form--profile .form--block.submit #btn-submit {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px 50px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #f8506e;
+  color: #fff;
+}
+@media all and (max-width: 600px) {
+  #form--profile .form--block.submit #btn-submit {
+    width: 100%;
+    padding: 15px 50px;
+  }
+}
+#form--profile .form--block ::-webkit-file-upload-button {
+  background-color: #f8506e;
+  color: #fff;
+  position: relative;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  height: 40px;
+  padding: 10px 30px;
+}
+#form--profile .form--block input {
+  color: #222;
+}
+@media all and (max-width: 600px) {
+  #form--profile .form--block input {
+    box-sizing: border-box;
+  }
+}
+#form--profile .form--block input[type=text], #form--profile .form--block input[type=email], #form--profile .form--block input[type=tel] {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  margin-bottom: 10px;
+}
+@media all and (max-width: 600px) {
+  #form--profile .form--block input[type=text], #form--profile .form--block input[type=email], #form--profile .form--block input[type=tel] {
+    width: 100% !important;
+    min-width: 320px;
+    max-width: unset;
+    height: 40px;
+  }
+}
+#form--profile .form--block input[type=number] {
+  height: 43px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  display: block;
+  width: 100%;
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+@media all and (max-width: 600px) {
+  #form--profile .form--block input[type=number] {
+    width: 100%;
+    min-width: 320px;
+    max-width: unset;
+    height: 40px;
+  }
+}
+#form--profile .form--block input[type=checkbox] {
+  margin-right: 10px;
+  height: 40px;
+  vertical-align: middle;
+}
+@media all and (max-width: 600px) {
+  #form--profile .form--block input[type=checkbox] {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: baseline;
+  }
+}
+#form--profile .form--block input[type=radio] {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+}

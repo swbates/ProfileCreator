@@ -1,0 +1,244 @@
+#form--profile {
+	padding: 15px; 
+    max-width: 470px;
+    width: 100%;
+    margin: 0 auto; 
+    background-color: $primary-red;
+    border: 2px solid $gray;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    @media all and (max-width: $mobile){
+    	margin: 0 20px; 
+        padding: 0;
+        width: 100%;
+        border: none;
+        background-color: $white;
+    }
+
+    h1 { 
+    	text-align: center; 
+    	margin-top: 0;
+    	margin-bottom: 20px; 
+    	color: $primary-blue; 
+    	font-family: $header-font;
+    	@media all and (max-width: $mobile){
+    		margin-bottom: 10px;
+    	}
+    }
+
+    h4 { 
+    	margin-top: 10px; 
+    	margin-bottom: 0; 
+    	color: $primary-blue; 
+    	font-weight: $font-weight-semibold;
+    	font-family: $body-font;
+    	@media all and (max-width: $mobile){
+    		margin-top: 0;
+    	} 
+    }
+
+    fieldset {
+    	border: 0; 
+    	margin: 0; 
+    	padding: 0;
+
+    	&:first-child {
+    		input { display: inline; width: 45%; }
+    	}
+
+    	label {
+    		@media all and (max-width: $mobile){
+    			font-size: $font-size-normal;
+    		}
+    	}
+    }
+
+    select {  
+			padding: 10px;
+			height: 40px; 
+		    border-radius: 5px; 
+		    border: 1px solid $light-gray; 
+		    padding: 5px;
+		    width: 100%;
+		    max-width: 330px;
+		    margin-right: 10px;
+		    margin-bottom: 10px;
+		    
+			@media all and (max-width: $mobile){
+				width: 100%; 
+				min-width: 320px; 
+				max-width: unset; 
+				height: 40px;
+			}
+		}
+
+	.form--block {
+
+		&.name { 
+			@include flexbox;
+			@include flex-row; 
+			
+			
+			input[type="text"]{  
+				display: inline; 
+				width: 49%; 
+
+				&:first-child {
+					margin-right: 10px;
+				}
+			}
+
+			@media all and (max-width: $mobile){
+		    	@include flex-column;
+		    }
+
+		}
+
+		&.location {  
+			@include flexbox;
+			@include flex-row; 
+			
+
+		    @media all and (max-width: $mobile){
+		    	@include flex-column;
+		    }
+		}
+		
+		&.photoupload { 
+
+     		@media all and (max-width: $mobile){ 
+     			margin-bottom: 5px; 
+     		}	
+
+			p { 
+				font-size: $font-size-sm; 
+				margin: 0 0 10px 0;
+				@media all and (max-width: $mobile){
+					display: none;
+				}
+			}
+		}
+		
+		&.communications {  
+			margin: 10px 0;
+
+			label {
+				@media all and (max-width: $mobile){
+					display: inline-block; 
+					vertical-align: bottom; 
+					width: 90%;
+				}
+			}
+		}
+		
+		&.form--block.gender {
+			@media all and (max-width: $mobile){ 
+				margin-bottom: 5px;
+			}
+		}
+
+		&.submit {  
+			#btn-submit { 
+			    width: 50%; 
+			    margin: $center-margin; 
+			    padding: 20px 50px; 
+			    border-radius: 10px; 
+			    border: 1px solid $light-gray; 
+			    background-color: $primary-color; 
+			    color: $white; 
+
+			    @media all and (max-width: $mobile){
+			    	width: 100%;
+			    	padding: 15px 50px;
+			    }
+		  	}
+		}
+
+		::-webkit-file-upload-button
+		 { 
+		    background-color: $primary-color;
+		    color: $white; 
+		    position: relative;
+		    border-radius: 2px;
+		    text-align: center;
+		    cursor: pointer;
+		    border: none;
+		    height: 40px;
+		    padding: 10px 30px;
+		  }
+
+		input {
+
+			color: $slate;
+
+			@media all and (max-width: $mobile){
+				@include box-sizing;
+			}
+
+			&[type="text"],
+			&[type="email"],
+			&[type="tel"] {
+				height: 40px; 
+			    border-radius: 5px; 
+			    border: 1px solid $light-gray; 
+			    padding: 5px 10px; 
+			    display: block;
+			    width: 100%;
+			    max-width: 440px;
+			    margin-bottom: 10px;
+
+			    @media all and (max-width:$mobile){
+			    	width: 100%!important; 
+			    	min-width: 320px; 
+			    	max-width: unset; 
+			    	height: 40px; 
+			    }
+			}
+
+			&[type="number"] {
+				height: 43px; 
+			    border-radius: 5px; 
+			    border: 1px solid $light-gray; 
+			    padding: 5px 10px; 
+			    display: block;
+			    width: 100%;
+			    max-width: 100px;
+			    margin-bottom: 10px;
+
+			    @media all and (max-width: $mobile){
+			    	width: 100%; 
+			    	min-width: 320px; 
+			    	max-width: unset; 
+			    	height: 40px;
+			    }
+			}
+
+			&[type="checkbox"] {
+				margin-right: 10px; 
+			    height: 40px;
+			    vertical-align: middle;
+
+
+    			@media all and (max-width: $mobile){
+    				height: 20px;
+    				width: 20px;
+    				display: inline-block; 
+    				vertical-align: baseline;
+    			}
+			}
+
+			&[type="radio"] {
+				display: inline;
+			    margin-left: 10px;
+			    margin-right: 10px;
+			    height: 20px;
+			    width: 20px;
+			    vertical-align: middle
+			}
+		}
+
+
+	}
+
+}
